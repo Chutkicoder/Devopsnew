@@ -1,0 +1,17 @@
+version: "3"
+services:
+  node1:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    container_name: node1
+    ports:
+      - "2222:22"
+
+  node2:
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    container_name: node2
+    ports:
+      - "2223:22"
